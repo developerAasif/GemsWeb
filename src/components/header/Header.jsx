@@ -17,7 +17,7 @@ export default function Header() {
                 <motion.div initial={{ x: "-100%" }} whileInView={{ x: 0 }}>
                     <GiCutDiamond />
                     <div>
-                        <h4>MG-GMS</h4>
+                        <h4>MG-GEMS</h4>
                     </div>
                 </motion.div>
 
