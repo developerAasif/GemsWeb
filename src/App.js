@@ -1,11 +1,9 @@
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-
-
-
-import logo from './logo.svg';
-
 import Header from './components/header/Header'
+import Home from "./pages/home/Home";
+
+
 
 
 import "./styles/app.scss";
@@ -17,6 +15,9 @@ function App() {
     <div className="App">
       <Router>
       <Header  />
+      <Home/>
+    
+      
       </Router>
     </div>
   );
