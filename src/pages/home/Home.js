@@ -13,7 +13,7 @@ function Home() {
         <Category />
         <PopularItems />
       </section>
-      {/* <Allproduct /> */}
+      <Allproduct />
     </section>
   )
 }
