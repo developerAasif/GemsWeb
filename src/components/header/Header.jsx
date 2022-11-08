@@ -9,7 +9,10 @@ import { motion } from "framer-motion";
 
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> e86644c9ea21d0e490ae3868b91436dda7e8c3a1
 export default function Header() {
     var isAuthenticated = true
     return (
@@ -30,7 +33,11 @@ export default function Header() {
                         <span>Home</span>
                     </Link>
 
+<<<<<<< HEAD
                     <Link to="/contact">
+=======
+                    <Link to="/about">
+>>>>>>> e86644c9ea21d0e490ae3868b91436dda7e8c3a1
                         <AiFillContacts />
                         <span>Contact Us</span>
                     </Link>
@@ -51,7 +58,11 @@ export default function Header() {
                     </Link>
 
 
+<<<<<<< HEAD
                     <Link to="/me">
+=======
+                    <Link to="/contact">
+>>>>>>> e86644c9ea21d0e490ae3868b91436dda7e8c3a1
                         <AiFillLock />
                         <span>Login/Signup</span>
                     </Link>

@@ -1,9 +1,7 @@
 import React from 'react'
 import Bannerslider from '../../components/home/Bannerslider'
 import Category from '../../components/home/Category';
-import PopularItems from '../products/PopularItems'
-import Allproduct from '../products/Allproduct'
-
+import PopularItems from '../../components/home/PopularItems';
 
 function Home() {
   return (
@@ -12,11 +10,7 @@ function Home() {
         <Bannerslider />
         <Category />
         <PopularItems />
-        <Allproduct />
         </section>
-
-
-     
     </section>
   )
 }

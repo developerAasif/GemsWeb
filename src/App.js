@@ -3,10 +3,8 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import CombineRoutes from "./routes/CombineRoutes";
 
-
 import 'react-loading-skeleton/dist/skeleton.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 
 
 
@@ -17,25 +15,10 @@ import "./styles/home.scss";
 
 
 function App() {
-  return (    <>
+  return (
     <Router>
       <CombineRoutes />
-
-  
-
-
-      </Router>
-
- 
-      
-
-   
-
-
-   
-     </>
-
-    
+    </Router>
   );
 }
 
