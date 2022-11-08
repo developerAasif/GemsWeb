@@ -6,8 +6,8 @@ import Layout from "../layout/Layout";
 
 
 const Home = Loadable(lazy(() => import("../pages/home/Home")));
-const Contact=Loadable(lazy(()=>import("../pages/home/Contact")));
-const About= Loadable(lazy(()=>import("../pages/home/About")));
+const Contact=Loadable(lazy(()=>import("../pages/static/Contact")));
+const About= Loadable(lazy(()=>import("../pages/static/About")));
 
 
 

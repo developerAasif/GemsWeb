@@ -1,8 +1,8 @@
 import React from 'react'
 import Bannerslider from '../../components/home/Bannerslider'
 import Category from '../../components/home/Category';
-import PopularItems from '../../components/home/PopularItems';
-import Allproduct from '../../components/home/Allproduct'
+import PopularItems from '../products/PopularItems'
+import Allproduct from '../products/Allproduct'
 
 
 function Home() {

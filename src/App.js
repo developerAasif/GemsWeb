@@ -2,8 +2,7 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import CombineRoutes from "./routes/CombineRoutes";
-import Contact from "./pages/home/Contact";
-import About from "./pages/home/About";
+
 
 import 'react-loading-skeleton/dist/skeleton.css'
 import 'bootstrap/dist/css/bootstrap.min.css';

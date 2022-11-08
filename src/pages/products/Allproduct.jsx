@@ -1,5 +1,5 @@
 import React from 'react'
-import Slider from "react-slick";
+// import Slider from "react-slick";
 
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
@@ -12,13 +12,6 @@ import '../../styles/allproduct.scss';
 
 function Allproduct ({ name, src }) {
 
-    var settings = {
-        infinite: true,
-        autoplay: true,
-        speed: 1000,
-        slidesToShow: 6,
-        slidesToScroll: 2
-    };
 
 
     return (
@@ -31,7 +24,7 @@ function Allproduct ({ name, src }) {
                 <h4>View All</h4>
             </span>
 
-            <Slider {...settings} style={{marginBottom:20}} >
+         
 
             {
                 [1,2,3,4,5,6,7,8].map(x=>(
@@ -71,7 +64,7 @@ function Allproduct ({ name, src }) {
 
 
 
-            </Slider>
+          
             </Card>
         </>
 
