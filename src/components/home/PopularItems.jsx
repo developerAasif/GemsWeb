@@ -12,7 +12,6 @@ import '../../styles/popularItem.scss';
 
 
 function PopularItems({ name, src }) {
-    
 
     var settings = {
         infinite: true,
