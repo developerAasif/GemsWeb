@@ -1,25 +1,24 @@
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Header from './components/header/Header'
-import Home from "./pages/home/Home";
+
+import CombineRoutes from "./routes/CombineRoutes";
+
+import 'react-loading-skeleton/dist/skeleton.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 
 
 import "./styles/app.scss";
 import "./styles/header.scss";
+import "./styles/home.scss";
 
 
 function App() {
   return (
-    <div className="App">
-      <Router>
-      <Header  />
-      <Home/>
-    
-      
-      </Router>
-    </div>
+    <Router>
+      <CombineRoutes />
+    </Router>
   );
 }
 

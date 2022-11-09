@@ -7,47 +7,192 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 
+import '../../styles/categorySlider.scss';
+
 
 function Categray({ name, src }) {
 
   var settings = {
     infinite: true,
     autoplay: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1
+    speed: 1000,
+    slidesToShow: 6,
+    slidesToScroll: 2
   };
 
 
   return (
-    <div className='category'>
 
-      <h2>Category</h2>
 
-      <div>
-        <Slider {...settings}>
 
-          <Card sx={{ maxWidth: 400, padding:2, borderRadius:5, alignItems:'center' }} >
-            <CardActionArea >
-              <CardMedia
-                component="img"
-                height="140"
-                image="https://previews.123rf.com/images/gooboad/gooboad2006/gooboad200600016/149744033-gemstone-background-texture.jpg"
-                alt="green iguana"
-                style={{border:'2px solid red',height:'250px', width:'250px', borderRadius:'100%'}}
-              />
-              <CardContent style={{border:'1px solid red', alignItems:'center'}}>
-                <Typography gutterBottom variant="h5" component="div">
-                  Lizard
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-          </Card>
-        </Slider>
+    <Card className='category-slider' >
+      <span className='category-slider-span'>
+         <h3>Category</h3> 
+         <h4>View All</h4>
+         </span>
 
-      </div>
+      <Slider {...settings} >
 
-    </div>
+        <CardActionArea className='category-slider-action'>
+          <CardMedia
+            className='category-slider-media'
+            component="img"
+            height="140"
+            image="https://previews.123rf.com/images/gooboad/gooboad2006/gooboad200600016/149744033-gemstone-background-texture.jpg"
+            alt="green iguana"
+          />
+          <CardContent style={{ display: 'block', alignItems: 'center', textAlign: 'center' }}>
+            <Typography gutterBottom variant="h5" component="div">
+              Lizardss
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+
+        <CardActionArea className='category-slider-action'>
+          <CardMedia
+            className='category-slider-media'
+            component="img"
+            height="140"
+            image="https://previews.123rf.com/images/gooboad/gooboad2006/gooboad200600016/149744033-gemstone-background-texture.jpg"
+            alt="green iguana"
+          />
+          <CardContent style={{ display: 'block', alignItems: 'center', textAlign: 'center' }}>
+            <Typography gutterBottom variant="h5" component="div">
+              Lizardss
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+
+        <CardActionArea className='category-slider-action'>
+          <CardMedia
+            className='category-slider-media'
+            component="img"
+            height="140"
+            image="https://previews.123rf.com/images/gooboad/gooboad2006/gooboad200600016/149744033-gemstone-background-texture.jpg"
+            alt="green iguana"
+          />
+          <CardContent style={{ display: 'block', alignItems: 'center', textAlign: 'center' }}>
+            <Typography gutterBottom variant="h5" component="div">
+              Lizardss
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+
+        <CardActionArea className='category-slider-action'>
+          <CardMedia
+            className='category-slider-media'
+            component="img"
+            height="140"
+            image="https://previews.123rf.com/images/gooboad/gooboad2006/gooboad200600016/149744033-gemstone-background-texture.jpg"
+            alt="green iguana"
+          />
+          <CardContent style={{ display: 'block', alignItems: 'center', textAlign: 'center' }}>
+            <Typography gutterBottom variant="h5" component="div">
+              Lizardss
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+
+        <CardActionArea className='category-slider-action'>
+          <CardMedia
+            className='category-slider-media'
+            component="img"
+            height="140"
+            image="https://previews.123rf.com/images/gooboad/gooboad2006/gooboad200600016/149744033-gemstone-background-texture.jpg"
+            alt="green iguana"
+          />
+          <CardContent style={{ display: 'block', alignItems: 'center', textAlign: 'center' }}>
+            <Typography gutterBottom variant="h5" component="div">
+              Lizardss
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+
+        <CardActionArea className='category-slider-action'>
+          <CardMedia
+            className='category-slider-media'
+            component="img"
+            height="140"
+            image="https://previews.123rf.com/images/gooboad/gooboad2006/gooboad200600016/149744033-gemstone-background-texture.jpg"
+            alt="green iguana"
+          />
+          <CardContent style={{ display: 'block', alignItems: 'center', textAlign: 'center' }}>
+            <Typography gutterBottom variant="h5" component="div">
+              Lizardss
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+
+        <CardActionArea className='category-slider-action'>
+          <CardMedia
+            className='category-slider-media'
+            component="img"
+            height="140"
+            image="https://previews.123rf.com/images/gooboad/gooboad2006/gooboad200600016/149744033-gemstone-background-texture.jpg"
+            alt="green iguana"
+          />
+          <CardContent style={{ display: 'block', alignItems: 'center', textAlign: 'center' }}>
+            <Typography gutterBottom variant="h5" component="div">
+              Lizardss
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+
+        <CardActionArea className='category-slider-action'>
+          <CardMedia
+            className='category-slider-media'
+            component="img"
+            height="140"
+            image="https://previews.123rf.com/images/gooboad/gooboad2006/gooboad200600016/149744033-gemstone-background-texture.jpg"
+            alt="green iguana"
+          />
+          <CardContent style={{ display: 'block', alignItems: 'center', textAlign: 'center' }}>
+            <Typography gutterBottom variant="h5" component="div">
+              Lizardss
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+
+        <CardActionArea className='category-slider-action'>
+          <CardMedia
+            className='category-slider-media'
+            component="img"
+            height="140"
+            image="https://previews.123rf.com/images/gooboad/gooboad2006/gooboad200600016/149744033-gemstone-background-texture.jpg"
+            alt="green iguana"
+          />
+          <CardContent style={{ display: 'block', alignItems: 'center', textAlign: 'center' }}>
+            <Typography gutterBottom variant="h5" component="div">
+              Lizardss
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+
+        <CardActionArea className='category-slider-action'>
+          <CardMedia
+            className='category-slider-media'
+            component="img"
+            height="140"
+            image="https://previews.123rf.com/images/gooboad/gooboad2006/gooboad200600016/149744033-gemstone-background-texture.jpg"
+            alt="green iguana"
+          />
+          <CardContent style={{ display: 'block', alignItems: 'center', textAlign: 'center' }}>
+            <Typography gutterBottom variant="h5" component="div">
+              Lizardss
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+
+
+
+
+      </Slider>
+
+    </Card>
+
+
+
+
   )
 }
 
