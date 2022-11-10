@@ -10,63 +10,45 @@ import { CardActionArea } from '@mui/material';
 import '../../styles/allproduct.scss';
 
 
-function Allproduct ({ name, src }) {
+function Allproduct({ name, src }) {
 
 
 
     return (
 
-        <>
+        <div className='All-product-container'>
 
-            <Card className='category-slider' >
-            <span className='category-slider-span'>
-                <h3>Allproduct</h3>
-                <h4>View All</h4>
-            </span>
+                {
+                    [1, 2, 3, 4, 5, 6, 7, 8,9,10,11,12].map(x => (
+                        <Card className='All-product' >
+                            <CardActionArea className='All-product-action'>
+                                <CardMedia
+                                    className='All-product-media'
+                                    component="img"
+                                    height="140"
+                                    image="https://previews.123rf.com/images/gooboad/gooboad2006/gooboad200600016/149744033-gemstone-background-texture.jpg"
+                                    alt="green iguana"
+                                />
+                                <CardContent style={{ display: 'block', alignItems: 'center', textAlign: 'center' }}>
+                                    <Typography gutterBottom variant="h5" component="div">
+                                        Lizardss
+                                    </Typography>
+                                    <Typography gutterBottom variant="h5" component="div">
+                                        Qty:$5
+                                    </Typography>
+                                    <Typography gutterBottom variant="h5" component="div">
+                                        Good
+                                    </Typography>
+                                    <Typography gutterBottom variant="h5" component="div">
+                                        *******
+                                    </Typography>
+                                </CardContent>
+                            </CardActionArea>
+                        </Card>
+                    ))
+                }
 
-         
-
-            {
-                [1,2,3,4,5,6,7,8].map(x=>(
-                    <Card className='popular-slider' >
-                    <CardActionArea className='popular-slider-action'>
-                        <CardMedia
-                            className='popular-slider-media'
-                            component="img"
-                            height="140"
-                            image="https://previews.123rf.com/images/gooboad/gooboad2006/gooboad200600016/149744033-gemstone-background-texture.jpg"
-                            alt="green iguana"
-                        />
-                        <CardContent style={{ display: 'block', alignItems: 'center', textAlign: 'center' }}>
-                            <Typography gutterBottom variant="h5" component="div">
-                                Lizardss
-                            </Typography>
-                            <Typography gutterBottom variant="h5" component="div">
-                                Qty:$5
-                            </Typography>
-                            <Typography gutterBottom variant="h5" component="div">
-                                Good
-                            </Typography>
-                            <Typography gutterBottom variant="h5" component="div">
-                                *******
-                            </Typography>
-                        </CardContent>
-                    </CardActionArea>
-                </Card>
-                ))
-            }
-
-               
-
-                
-
-
-
-
-
-          
-            </Card>
-        </>
+        </div>
 
 
 

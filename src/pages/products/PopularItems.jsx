@@ -18,22 +18,46 @@ function PopularItems({ name, src }) {
         autoplay: true,
         speed: 1000,
         slidesToShow: 6,
-        slidesToScroll: 2
+        slidesToScroll: 2,
+        responsive: [
+            {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+              },
+            },
+            {
+              breakpoint: 1008,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              },
+            },
+            {
+              breakpoint: 800,
+            //   settings: 'unslick',
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+              },
+            },
+          ],
     };
     const Navigate=useNavigate();
 
 
     return (
 
-        <>
+        <div >
 
-            <Card className='category-slider' >
+            <Card className='category-slider'  >
             <span className='category-slider-span'>
                 <h3>Popular Items</h3>
                 <h4>View All</h4>
             </span>
 
-            <Slider {...settings} style={{marginBottom:20}} >
+            <Slider {...settings} style={{marginBottom:20, padding:'10px 40px'}}  >
 
             {
                 [1,2,3,4,5,6,7,8].map(x=>(
@@ -42,7 +66,7 @@ function PopularItems({ name, src }) {
                         <CardMedia
                             className='popular-slider-media'
                             component="img"
-                            height="140"
+                            // height="140"
                             image="https://previews.123rf.com/images/gooboad/gooboad2006/gooboad200600016/149744033-gemstone-background-texture.jpg"
                             alt="green iguana"
                         />
@@ -75,7 +99,7 @@ function PopularItems({ name, src }) {
 
             </Slider>
             </Card>
-        </>
+        </div>
 
 
 

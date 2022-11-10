@@ -12,8 +12,8 @@ function Home() {
         <Bannerslider />
         <Category />
         <PopularItems />
-      </section>
       <Allproduct />
+      </section>
     </section>
   )
 }
