@@ -17,7 +17,7 @@ function PopularItems({ name, src }) {
         autoplay: true,
         speed: 1000,
         slidesToShow: 6,
-        slidesToScroll: 2
+        slidesToScroll: 3
     };
 
 
