@@ -4,7 +4,10 @@ import { lazy } from "react";
 import Loadable from "../components/Loadable";
 import Layout from "../layout/Layout";
 
+
 const Home = Loadable(lazy(() => import("../pages/home/Home")));
+const Contact=Loadable(lazy(()=>import("../pages/static/Contact")));
+const About= Loadable(lazy(()=>import("../pages/static/About")));
 
 
 
@@ -18,6 +21,17 @@ const PrivateRoutes = {
       path: "/",
       element: <Home />,
     },
+
+    {
+      path:"/contact",
+      element:<Contact />
+
+    },
+    {
+      path:"/about",
+      element:<About />
+
+    }
   
   ],
 };
